@@ -1,0 +1,22 @@
+{% extends "template.html" %} {% block body %}
+
+<h2>Action Page</h2>
+<p>The file have been successfully uploaded.</p>
+
+<br>
+<h3>Start with melody experience. </h3>
+    <button type="submit" class="add-btn">Read Notes</button>
+
+
+
+    <form action="/play">
+        <button type="submit" class="add-btn">Play Notes</button>
+    </form>
+
+
+    <form action="/home">
+    <button type="submit" class="add-btn">Go back</button>
+</form>
+<br>
+
+{% endblock %}

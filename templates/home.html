@@ -1,0 +1,62 @@
+{% extends "template.html" %} {% block body %}
+
+<h2>Home Page</h2>
+
+    <div>
+        <center>
+
+            <p>This site is created by the students from FH Technikum Vienna in hopes to fill a challenging daily life with joy and melody.  </p>
+
+        </center>
+
+    </div>
+
+<p>Upload a photo with music notation.</p>
+
+    <style>
+        .customfile{
+            border: 5px solid black;
+            border-radius: 50px;
+            padding: 2px;
+            font-size: 20px;
+        }
+        .customfile::-webkit-file-upload-button{
+            background: black;
+            color: white;
+            padding: 8px 16px;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+        }
+        .sub{
+           background: black;
+            color: white;
+            padding: 8px 16px;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            font-size: 20px;
+        }
+
+
+    </style>
+
+    <center>
+    <input type="file" class="customfile">
+    <input type="submit" class="sub">
+    </center>
+
+
+<form action="/actions">
+    <button type="submit" class="add-btn">Choose action</button>
+</form>
+
+
+
+
+
+
+<br>
+
+
+{% endblock %}
