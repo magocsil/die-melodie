@@ -5,15 +5,35 @@
 
 <br>
 <h3>Start with melody experience. </h3>
+
     <button type="submit" class="add-btn">Read Notes</button>
 
 
 
-    <form action="/play">
-        <button type="submit" class="add-btn">Play Notes</button>
-    </form>
+    <script>
+    function ShowAndHide() {
+    var x = document.getElementById('SectionName');
+    if (x.style.display == 'none') {
+        x.style.display = 'block';
+    } else {
+        x.style.display = 'none';
+    }
+}
+    </script>
+    <button onclick="ShowAndHide()" class="add-btn">Play Notes</button>
+    <div id="SectionName" STYLE="display:none">
+
+    <button class='button play'></button>
+
+    <audio controls>
+  <source src="horse.mp3"  type="audio/mpeg">
+
+</audio>
 
 
+    </div>
+
+&nbsp;
     <form action="/home">
     <button type="submit" class="add-btn">Go back</button>
 </form>

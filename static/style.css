@@ -60,3 +60,44 @@ body {
     background-color: #2C2F33;
 }
 
+.customfile{
+            border: 5px solid black;
+            border-radius: 5px;
+            padding: 2px;
+            font-size: 20px;
+        }
+        .customfile::-webkit-file-upload-button{
+            background: black;
+            color: white;
+            padding: 8px 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .customfile::-webkit-file-upload-button:hover {
+            background: rgba(0, 0, 0, 0.69);
+            color: white;
+            padding: 8px 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 20px;
+}
+        .sub{
+            background: black;
+            color: white;
+            padding: 8px 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 20px;
+        }
+        .sub:hover {
+            background: rgba(0, 0, 0, 0.69);
+            color: white;
+            padding: 8px 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 20px;
+}
