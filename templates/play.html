@@ -3,14 +3,10 @@
 <h2>Playing the melody...</h2>
 
 
-    <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
-    <script defer src="https://pyscript.net/latest/pyscript.js"></script>
+  <button type="button" class="add-btn" onclick="window.location.href='{{ url_for("playsound") }}'">Play</button>
 
 
-
-
-
-    <form action="/home">
+    <form action="/actions">
     <button type="submit" class="add-btn">Go back</button>
     </form>
 <br>

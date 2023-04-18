@@ -20,9 +20,13 @@ def actions():
 def read():
     return render_template("read.html") #rendering our actions.html contained within /templates
 
-@app.route("/play") #defining the routes for the actions funtion
+@app.route("/playsound", methods=["GET", "POST"])
+def playsound():
+    return send_file("audiotest.mp3")
+
+@app.route("/play")
 def play():
-    return render_template("play.html") #rendering our actions.html contained within /templates
+    return render_template("play.html")
 
 if __name__ == "__main__":
     app.run(debug=True,port=4949) #running flask (Initalised on line 4)
