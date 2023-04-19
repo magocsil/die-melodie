@@ -26,14 +26,15 @@ body {
 }
 
 .add-btn {
-    height: 40px;
-    width: 150px;
-    color: #FFFFFF;
+    height: 50px;
+    width: 180px;
+    color: black;
     background-color: #03d603;
     border: 1px solid #029902;
     border-radius: 5px;
     padding: 10px;
-    margin: 10px;
+    margin: 20px;
+    font-size: 18px;
 }
 
 .add-btn:hover {
@@ -49,9 +50,12 @@ body {
     border: 1px solid #029902;
     border-radius: 5px;
 }
+.inline {
+  display: inline;
+}
 
 .form-feild {
-    height: 40px;
+    height: 70px;
     width: 200px;
     border: 1px solid #99AAB5;
     border-radius: 5px;
@@ -101,3 +105,4 @@ body {
             cursor: pointer;
             font-size: 20px;
 }
+
