@@ -1,0 +1,83 @@
+Staff line width is 2 and staff line spacing is 12 
+The sheet contains 4 sets of staff lines
+Time Signature is 44
+Clef on staff 3 is treble
+*** Notes on staff 1 ***
+Bar 1
+note D6 0.5
+note B3 0.5
+note B3 0.5
+note F4 1
+note F4 1
+note F4 1
+Bar 2
+note G4 1
+note G4 1
+note F4 1
+note F4 1
+note F4 1
+Bar 3
+note E4 1
+note E4 1
+note D4 1
+note D4 1
+note D4 1
+Bar 4
+note C3 1
+note C3 1
+note B3 1
+note B3 1
+note B3 1
+*** Notes on staff 2 ***
+Bar 1
+note F4 1
+note F4 1
+note E4 1
+note E4 1
+note E4 1
+Bar 2
+note D4 1
+note D4 1
+note C3 1
+note C3 1
+note C3 1
+Bar 3
+note F4 1
+note F4 1
+note E4 1
+note E4 1
+note E4 1
+Bar 4
+note D4 1
+note D4 1
+note C3 1
+note C3 1
+note C3 1
+*** Notes on staff 3 ***
+Bar 1
+note B3 1
+note B3 1
+note F4 1
+note F4 1
+note F4 1
+Bar 2
+note G4 1
+note G4 1
+note F4 1
+note F4 1
+note F4 1
+Bar 3
+note E4 1
+note E4 1
+note D4 1
+note D4 1
+note D4 1
+Bar 4
+note C3 1
+note C3 1
+note B3 1
+note B3 1
+note B3 1
+*** Notes on staff 4 ***
+Bar 1
+note B3 1
