@@ -1,35 +1,72 @@
 {% extends "template.html" %} {% block body %}
 
-<h2>Home Page</h2>
-
-    <div>
-        <center>
-
-            <p>This application is created by the students from FH Technikum Vienna in hopes to fill a challenging daily life with joy and melody.  </p>
-
-        </center>
-
-    </div>
 &nbsp;
-<p>Upload a photo with music notation.</p>
+
+  <link rel="stylesheet"
+        href=
+"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
 
 
+
+
+      <fieldset class="uploaddocument">
+        <legend>Upload document</legend>
+        <p>Upload a photo with music notation.</p>
     <center>
     <input type="file" class="customfile">
     <input type="submit" class="sub">
     </center>
+      </fieldset>
 
-&nbsp;
+
+
+ <fieldset class="connect">
+    <legend>Play MIDI file</legend>
+      <body>
+  <div class="player">
+
+    <!-- Define the section for displaying track buttons -->
+    <div class="buttons">
+      <div class="prev-track" onclick="prevTrack()">
+        <i class="fa fa-step-backward fa-2x"></i>
+      </div>
+      <div class="playpause-track" onclick="playpauseTrack()">
+        <i class="fa fa-play-circle fa-5x"></i>
+      </div>
+      <div class="next-track" onclick="nextTrack()">
+        <i class="fa fa-step-forward fa-2x"></i>
+      </div>
+    </div>
+
+    <!-- Define the section for displaying the seek slider-->
+    <div class="slider_container">
+      <div class="current-time">00:00</div>
+      <input type="range" min="1" max="100"
+        value="0" class="seek_slider" onchange="seekTo()">
+      <div class="total-duration">00:00</div>
+    </div>
+
+    <!-- Define the section for displaying the volume slider-->
+    <div class="slider_container">
+      <i class="fa fa-volume-down"></i>
+      <input type="range" min="1" max="100"
+        value="99" class="volume_slider" onchange="setVolume()">
+      <i class="fa fa-volume-up"></i>
+    </div>
+  </div>
+
+  <!-- Load the main script for the player -->
+  <script src="main.js"></script>
+</body>
+      </fieldset>
+
+&nbsp;<fieldset>
+    <legend>Actions</legend>
 <form action="/actions">
-    <button type="submit" class="add-btn">Choose action</button>
+    <table>
+    <button type="submit" class="add-btn">Convert notes</button>
+        <button type="submit" class="add-btn">Read aloud</button>
+    </table>
 </form>
-
-
-
-
-
-
-
-
-
+</fieldset>
 {% endblock %}

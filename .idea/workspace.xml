@@ -4,20 +4,42 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e0b73c9a-f8a0-43b5-9628-11153a58656b" name="Changes" comment="version 1.0" />
+    <list default="true" id="e0b73c9a-f8a0-43b5-9628-11153a58656b" name="Changes" comment="working version that converts notes">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/convertedNotes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/convertedNotes.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/output/binarizedImage.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/output/binarizedImage.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/output/convertedNotes.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/src/output/convertedNotes.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/output/musicSheet.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/output/musicSheet.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/output/noStaffImage.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/output/noStaffImage.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/output/output-piano.mid" beforeDir="false" afterPath="$PROJECT_DIR$/src/output/output-piano.mid" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/output/staff1Primitives.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/output/staff1Primitives.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/output/staffDetection.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/output/staffDetection.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/melodie.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/melodie.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;
   }
-}]]></component>
+}</component>
   <component name="GithubPullRequestsUISettings">
     <option name="selectedUrlAndAccountId">
       <UrlAndAccount>
@@ -37,10 +59,11 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/akasp/OneDrive/Desktop/die-melodie&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/akasp/Downloads/xml2abc_145/xml2abc.py&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -51,18 +74,85 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\akasp\OneDrive\Desktop\die-melodie\templates" />
+      <recent name="C:\Users\akasp\OneDrive\Desktop\die-melodie\button\templates" />
       <recent name="C:\Users\akasp\OneDrive\Desktop\python-simple-website\templates" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.main">
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="python-simple-website" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="play" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="python-simple-website" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/play.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="readaloud" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="python-simple-website" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/readaloud.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="python-simple-website" type="Python.FlaskServer">
       <module name="python-simple-website" />
       <option name="target" value="$PROJECT_DIR$/app.py" />
       <option name="targetType" value="PATH" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="C:\Users\akasp\AppData\Local\Programs\Python\Python310\python.exe" />
-      <option name="SDK_NAME" value="Python 3.10" />
+      <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
@@ -71,6 +161,13 @@
       <option name="launchJavascriptDebuger" value="false" />
       <method v="2" />
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.main" />
+        <item itemvalue="Python.play" />
+        <item itemvalue="Python.readaloud" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -87,6 +184,13 @@
       <workItem from="1681721318701" duration="6000" />
       <workItem from="1681721399838" duration="700000" />
       <workItem from="1681722116539" duration="1143000" />
+      <workItem from="1681723281576" duration="21250000" />
+      <workItem from="1681757906053" duration="10445000" />
+      <workItem from="1681903774628" duration="4316000" />
+      <workItem from="1682005249982" duration="430000" />
+      <workItem from="1682610317047" duration="1296000" />
+      <workItem from="1684268746036" duration="4548000" />
+      <workItem from="1685524848121" duration="4141000" />
     </task>
     <task id="LOCAL-00001" summary="version 1.0">
       <created>1681722389325</created>
@@ -109,7 +213,56 @@
       <option name="project" value="LOCAL" />
       <updated>1681722862895</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="version 2.0">
+      <created>1681729027524</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1681729027524</updated>
+    </task>
+    <task id="LOCAL-00005" summary="version 2.0">
+      <created>1681853512104</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1681853512104</updated>
+    </task>
+    <task id="LOCAL-00006" summary="version 2.0">
+      <created>1681853635291</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1681853635291</updated>
+    </task>
+    <task id="LOCAL-00007" summary="version 2.0">
+      <created>1681854194420</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1681854194420</updated>
+    </task>
+    <task id="LOCAL-00008" summary="version 3.0">
+      <created>1681858889900</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1681858889900</updated>
+    </task>
+    <task id="LOCAL-00009" summary="version 3.1 fixed style and positions">
+      <created>1681907531926</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1681907531926</updated>
+    </task>
+    <task id="LOCAL-00010" summary="working version that converts notes">
+      <created>1684269489496</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1684269489496</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -128,6 +281,17 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="version 1.0" />
-    <option name="LAST_COMMIT_MESSAGE" value="version 1.0" />
+    <MESSAGE value="version 2.0" />
+    <MESSAGE value="version 3.0" />
+    <MESSAGE value="version 3.1 fixed style and positions" />
+    <MESSAGE value="working version that converts notes" />
+    <option name="LAST_COMMIT_MESSAGE" value="working version that converts notes" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/die_melodie$main.coverage" NAME="main Coverage Results" MODIFIED="1685528088004" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
+    <SUITE FILE_PATH="coverage/die_melodie$test.coverage" NAME="test Coverage Results" MODIFIED="1681756891613" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/die_melodie$readaloud.coverage" NAME="readaloud Coverage Results" MODIFIED="1681758608562" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/die_melodie$play.coverage" NAME="play Coverage Results" MODIFIED="1681853713275" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/die_melodie$python_simple_website.coverage" NAME="python-simple-website Coverage Results" MODIFIED="1685525218270" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
   </component>
 </project>
