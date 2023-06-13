@@ -4,25 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e0b73c9a-f8a0-43b5-9628-11153a58656b" name="Changes" comment="old version">
-      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
+    <list default="true" id="e0b73c9a-f8a0-43b5-9628-11153a58656b" name="Changes" comment="final version part 1">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/convertedNotes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/convertedNotes.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/output/binarizedImage.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/output/binarizedImage.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/output/convertedNotes.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/src/output/convertedNotes.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/output/musicSheet.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/output/musicSheet.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/output/noStaffImage.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/output/noStaffImage.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/output/output-piano.mid" beforeDir="false" afterPath="$PROJECT_DIR$/src/output/output-piano.mid" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/output/staff1Primitives.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/output/staff1Primitives.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/output/staffDetection.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/output/staffDetection.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/melodie.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/melodie.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/template.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/template.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/test.pdf" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -208,7 +192,7 @@
       <workItem from="1685541976121" duration="672000" />
       <workItem from="1686087156786" duration="6094000" />
       <workItem from="1686232807586" duration="5481000" />
-      <workItem from="1686665499916" duration="12322000" />
+      <workItem from="1686665499916" duration="13278000" />
     </task>
     <task id="LOCAL-00001" summary="version 1.0">
       <created>1681722389325</created>
@@ -301,7 +285,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686677813499</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="final version part 1">
+      <created>1686682906603</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1686682906603</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -326,7 +317,8 @@
     <MESSAGE value="working version that converts notes" />
     <MESSAGE value="new tamplate" />
     <MESSAGE value="old version" />
-    <option name="LAST_COMMIT_MESSAGE" value="old version" />
+    <MESSAGE value="final version part 1" />
+    <option name="LAST_COMMIT_MESSAGE" value="final version part 1" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/die_melodie$main.coverage" NAME="main Coverage Results" MODIFIED="1686234407118" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />

@@ -22,8 +22,8 @@
 
 <h2>Convert notes</h2>
     <fieldset >
-    <p>Clik on button to show converted notes.</p>
-    <div id="display" class="placeholder">
+    <p>Clik on a button to show converted notes.</p>
+    <div id="display" class="hidden">
         <label for="v1">Voice 1:</label>
         <input type="text" id="v1" name="v1" readonly><br><br>
         <label for="v2">Voice 2:</label>
@@ -33,18 +33,13 @@
 
     </div>
 
-    <div>
-        <input type="button" id="clickme" value="Convert Notes" class="add-btn"/>
-    </div>
-
+    <button onclick="showDiv()" class="add-btn">Convert notes</button>
     <script>
-        var click = document.getElementById('clickme');
-        click.addEventListener('click', myfunction);
+        function showDiv() {
+      var div = document.getElementById("display");
+      div.style.display = "block";
 
-        function myfunction() {
-        var tablewrap = document.getElementById('display');
-        tablewrap.classList.toggle('hidden')
-        };
+    }
     </script>
 
     </fieldset>
