@@ -111,7 +111,7 @@ if __name__ == "__main__":
     f = open("convertedNotes.txt", "w+")
 
 
-    pdfFile = 'C:/Users/akasp/OneDrive/Desktop/die-melodie/src/test/test1.pdf'
+    pdfFile = 'C:/Users/akasp/OneDrive/Desktop/die-melodie/src/test/test0.pdf'
     imageFile = convert_from_path(pdfFile)
     for image in imageFile:
         image.save('C:/Users/akasp/OneDrive/Desktop/die-melodie/src/output/musicSheet.jpg', 'JPEG')
@@ -130,7 +130,7 @@ if __name__ == "__main__":
     staffVerticalIndices = findStaffRows(img, lineWidth, lineSpace, 0.1)
     #print("The sheet contains", len(staffVerticalIndices), "sets of staff lines")
 
-    str1 = "Staff line width is {} and staff line spacing is {} \n".format(lineWidth, lineSpace)
+
     str2 = "The sheet contains {} sets of staff lines\n".format(len(staffVerticalIndices))
 
     
@@ -224,7 +224,7 @@ if __name__ == "__main__":
             clefBox = mergeBox([j for i in clefBox for j in i], 0.5)
             if (len(clefBox) == 1):
                 #print("Clef on staff", i+1 ,"is", clef)
-                str4 = "Clef on staff {} is {}\n".format(i+1,clef)
+                str4 = "Clef on staff {} is {}\n".format(i,clef)
                 staffs[i].setClef(clef)
                 clefBoxImg = staffs[i].getImage()
                 clefBoxImg = clefBoxImg.copy()
@@ -384,7 +384,7 @@ if __name__ == "__main__":
             quarter = Primitive("rest", 1, box)
             staffPrimitive.append(quarter)
 
-        print("Matching eighth note flag templates on staff", i+1, "...")
+        #print("Matching eighth note flag templates on staff", i+1, "...")
         flagBox = templateLocation(staffImage, flagImg, eighthFlagLow, eighthFlagUp, eighthFlagThreshold)
         flagBox = mergeBox([j for i in flagBox for j in i], 0.5)
         for box in flagBox:
@@ -536,7 +536,7 @@ if __name__ == "__main__":
 
     # ------------------------------------------------------
     # WRITE CONVERTED NOTES TO TEXT FILE
-    lines = [str1, str2, str3, str4]
+    lines = [str2, str3, str4]
     f.writelines(lines)
 
 

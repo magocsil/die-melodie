@@ -1,8 +1,6 @@
 
 {% extends "template.html" %} {% block body %}
 
-&nbsp;
-
   <link rel="stylesheet"
         href=
 "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
@@ -11,118 +9,86 @@
 
 
 <h2>Upload document</h2>
-      <fieldset class="uploaddocument">
-
-        <p>Upload a document with music notation.</p>
+    <fieldset >
+    <p>Upload a document with music notation.</p>
     <center>
     <input type="file" class="customfile">
     <input type="submit" class="sub">
     </center>
-      </fieldset>
+    </fieldset>
 
 
-<h2>Play MIDI file</h2>
- <fieldset class="connect">
-
-
-  <div class="player">
-
-    <!-- Define the section for displaying track buttons -->
-    <div class="buttons">
-      <div class="prev-track" onclick="prevTrack()">
-        <i class="fa fa-step-backward fa-2x"></i>
-      </div>
-      <div class="playpause-track" onclick="playpauseTrack()">
-        <i class="fa fa-play-circle fa-5x"></i>
-      </div>
-      <div class="next-track" onclick="nextTrack()">
-        <i class="fa fa-step-forward fa-2x"></i>
-      </div>
-    </div>
-
-    <!-- Define the section for displaying the seek slider-->
-    <div class="slider_container">
-      <div class="current-time">00:00</div>
-      <input type="range" min="1" max="100"
-        value="0" class="seek_slider" onchange="seekTo()">
-      <div class="total-duration">00:00</div>
-    </div>
-
-    <!-- Define the section for displaying the volume slider-->
-    <div class="slider_container">
-      <i class="fa fa-volume-down"></i>
-      <input type="range" min="1" max="100"
-        value="99" class="volume_slider" onchange="setVolume()">
-      <i class="fa fa-volume-up"></i>
-    </div>
-  </div>
-
-  <!-- Load the main script for the player -->
-  <script src="main.js"></script>
-
-      </fieldset>
 
 
 <h2>Convert notes</h2>
-&nbsp;<fieldset class="uploaddocument">
+    <fieldset >
+    <p>Clik on button to show converted notes.</p>
+    <div id="display" class="placeholder">
+        <label for="v1">Voice 1:</label>
+        <input type="text" id="v1" name="v1" readonly><br><br>
+        <label for="v2">Voice 2:</label>
+        <input type="text" id="v2" name="v2" value="C1 D2" readonly><br><br>
+        <label for="v3">Voice 3:</label>
+        <input type="text" id="v3" name="v3" value="C1 D2" readonly><br><br>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-<script>
-$(document).ready(function(){
-  $("button").click(function(){
-    $("p").html("Hello <b>world!</b>");
+    </div>
 
-  });
-});
-</script>
+    <div>
+        <input type="button" id="clickme" value="Convert Notes" class="add-btn"/>
+    </div>
 
-<body>
-<p>Clik on button to show converted notes.</p>
-<button class="add-btn">Convert notes</button>
+    <script>
+        var click = document.getElementById('clickme');
+        click.addEventListener('click', myfunction);
 
-</body>
+        function myfunction() {
+        var tablewrap = document.getElementById('display');
+        tablewrap.classList.toggle('hidden')
+        };
+    </script>
 
- </fieldset>
-
-
-
-<h2>Display notes</h2>
-<fieldset class="uploaddocument">
-
-        <input type="button" class="add-btn" name="rf" id="infl">
-        <div id="res"></div>
-        <script>
-            document.getElementById('infl').addEventListener('change',function(){
-                var file_reader=new FileReader();
-                file_reader.onload=function(){
-                    document.getElementById('res').textContent=file_reader.result;
-                }
-                file_reader.readAsText(this.files[0]);
-            })
-        </script>
-
-</fieldset>
+    </fieldset>
 
 
 
+<h2>Read notes aloud</h2>
+    <fieldset >
+    <input type="file" id="fileInput" class="customfile"/>
+    <div id="fileContents"></div>
+
+    <script>
+        document.getElementById('fileInput').addEventListener('change', function(e) {
+        var file = e.target.files[0];
+        var reader = new FileReader();
+
+        reader.onload = function(e) {
+        var contents = e.target.result;
+        document.getElementById('fileContents').textContent = contents;
+        };
+
+        reader.readAsText(file);
+    });
+    </script>
+
+    </fieldset >
 
 
 
-
-
-<input type="file" class="customfile" id="input"/>
-<audio id="sound" controls></audio>
-<script type="text/javascript">
-   input.onchange = function(e){
-  var sound = document.getElementById('sound');
-  sound.src = URL.createObjectURL(this.files[0]);
-  // not really needed in this exact case, but since it is really important in other cases,
-  // don't forget to revoke the blobURI when you don't need it
-  sound.onend = function(e) {
-    URL.revokeObjectURL(this.src);
-  }
-}
-</script>
+<h2>Play MIDI file</h2>
+    <fieldset >
+    <div class="container">
+    <input type="file" class="customfile" id="input" />
+    <audio class="audio-player" id="sound" controls></audio>
+    <script type="text/javascript">
+        input.onchange = function(e){
+        var sound = document.getElementById('sound');
+        sound.src = URL.createObjectURL(this.files[0]);
+        sound.onend = function(e) {
+        URL.revokeObjectURL(this.src);}
+        };
+    </script>
+    </div>
+    </fieldset>
 
 
 
