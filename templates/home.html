@@ -1,3 +1,4 @@
+
 {% extends "template.html" %} {% block body %}
 
 &nbsp;
@@ -9,9 +10,10 @@
 
 
 
+<h2>Upload document</h2>
       <fieldset class="uploaddocument">
-        <legend>Upload document</legend>
-        <p>Upload a photo with music notation.</p>
+
+        <p>Upload a document with music notation.</p>
     <center>
     <input type="file" class="customfile">
     <input type="submit" class="sub">
@@ -19,10 +21,10 @@
       </fieldset>
 
 
-
+<h2>Play MIDI file</h2>
  <fieldset class="connect">
-    <legend>Play MIDI file</legend>
-      <body>
+
+
   <div class="player">
 
     <!-- Define the section for displaying track buttons -->
@@ -57,16 +59,73 @@
 
   <!-- Load the main script for the player -->
   <script src="main.js"></script>
-</body>
+
       </fieldset>
 
-&nbsp;<fieldset>
-    <legend>Actions</legend>
-<form action="/actions">
-    <table>
-    <button type="submit" class="add-btn">Convert notes</button>
-        <button type="submit" class="add-btn">Read aloud</button>
-    </table>
-</form>
+
+<h2>Convert notes</h2>
+&nbsp;<fieldset class="uploaddocument">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $("p").html("Hello <b>world!</b>");
+
+  });
+});
+</script>
+
+<body>
+<p>Clik on button to show converted notes.</p>
+<button class="add-btn">Convert notes</button>
+
+</body>
+
+ </fieldset>
+
+
+
+<h2>Display notes</h2>
+<fieldset class="uploaddocument">
+
+        <input type="button" class="add-btn" name="rf" id="infl">
+        <div id="res"></div>
+        <script>
+            document.getElementById('infl').addEventListener('change',function(){
+                var file_reader=new FileReader();
+                file_reader.onload=function(){
+                    document.getElementById('res').textContent=file_reader.result;
+                }
+                file_reader.readAsText(this.files[0]);
+            })
+        </script>
+
 </fieldset>
+
+
+
+
+
+
+
+
+<input type="file" class="customfile" id="input"/>
+<audio id="sound" controls></audio>
+<script type="text/javascript">
+   input.onchange = function(e){
+  var sound = document.getElementById('sound');
+  sound.src = URL.createObjectURL(this.files[0]);
+  // not really needed in this exact case, but since it is really important in other cases,
+  // don't forget to revoke the blobURI when you don't need it
+  sound.onend = function(e) {
+    URL.revokeObjectURL(this.src);
+  }
+}
+</script>
+
+
+
+
+
 {% endblock %}
