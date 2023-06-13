@@ -1,13 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
 
 h1 {
-
-  font-weight: bold;
+    #font-family: verdana;
+    font-weight: bold;
     text-align:center;
     color: black;
     font-size:50px;
 }
 h2{
     color: black;
+    text-align: left;
+    #width: 2px;
+    font-size:16px;
+    #padding-right:1300px
 }
 
 
@@ -16,7 +21,7 @@ body {
     display: inline;
     font-family: verdana;
     background-color: white;
-    background-image: url("melodie.jpg");
+    #background-image: url("melodie.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -240,3 +245,5 @@ i.fa-step-forward,
 i.fa-step-backward {
   cursor: pointer;
 }
+
+
