@@ -20,12 +20,12 @@ engine.setProperty('voice', voices[1].id)
 engine.setProperty('rate', 150)
 
 # absolute path
-path = 'C:/Users/akasp/OneDrive/Desktop/die-melodie/test'
+path = 'C:/Users/akasp/OneDrive/Desktop/die-melodie/src/testcase'
 
 
 # select file
 
-book_choice = 'test.pdf'
+book_choice = 'convertedNotes.pdf'
 
 
 # creating a pdf file object

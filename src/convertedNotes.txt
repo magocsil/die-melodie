@@ -1,10 +1,8 @@
-The sheet contains 1 sets of staff lines
-
-Time signature is 44
+Time signature is 4 over 4
 
 Clef on staff 0 is bass
 
-*** Notes on staff 1 ***
+Notes on staff 1 
 
 Bar 1
 
