@@ -26,7 +26,7 @@ The output looks like this:
       - 3 is the octave below that,
       - 5 is the octave above that,
       - and so on.
-- [x] `|` defines a bar, `:||` and `||:` encapsulate a repeat sign, `||` signs the end of the piece.
+- [x] `|` defines a bar, `:||` and `||:` encapsulate a session to repeat, `||` signs the end of the piece.
 - [x] `1#` defines the key signature. `1` is the number of the modulations, which can be `#` for a sharp or `b` for a flat.
 - [x] `4/4` defines the time signature.
 - [x] `Default 8` defines the lowest rhythmic value appearing in the music sheet. This is a reference, and every note's length marker (their first digit) is relative to this number.
