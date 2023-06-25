@@ -17,6 +17,7 @@ The goal of this project is to recognize the content of a music sheets and conve
    - [x] The application converts the notes into audible files.
    - [x] The application runs on a locally hosted server.
    - [ ] Bars and voices can be selected while playing the music.
+   - [x] The output can be read by a screen reader.
 
 - ### The used musical notation
 The output looks like this:
