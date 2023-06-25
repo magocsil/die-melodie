@@ -6,10 +6,13 @@ This application is created by the students from FH Technikum Wien in hopes to f
 The goal of this project is to recognize the content of a music sheets and convert it to ABC notation, that can be read with a screen reader.
 - ### Goals and their states in the project
    - [x] The program reads a .pdf file, containing the music sheets.
-   - [x] The program recognizes the sets of staffs. / Note: if the staffs are not completely horizontal, the recognition is buggy.
+   - [x] The program recognizes the sets of staffs.
+         - Note: if the staffs are not completely horizontal, the recognition is buggy.
    - [x] The program recognizes the clef.
    - [x] The application recognizes the time signature.
-   - [ ] The application recognizes the notes correctly. / The notes in the output go a bit below or above the actual notes. Note: the current program output doesn't yet uses the format of the sample below.
+   - [ ] The application recognizes the notes correctly.
+         - The notes in the output go a bit below or above the actual notes.
+         - Note: the current program output doesn't yet uses the format of the sample below.
    - [x] The application has a readaloud part (like a screen reader).
    - [x] The application converts the notes into audible files.
    - [x] The application runs on a locally hosted server.
